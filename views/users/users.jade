@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title Usres
+  body
+    h1 Users
+    p
+    ul
+      each val, index in users
+        li= (index+1) + ': Name - ' + val.name + ' E-mail - ' + val.email + ' :: Mongo ID - ' + val.id
